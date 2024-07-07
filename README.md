@@ -6,8 +6,11 @@ Motivado con esta idea encare este proyecto, vamos a ver si es posible distingui
 El proyecto se divide en 3 fases
 
 ├── notebooks/
+
 │   ├── Spotify_ManejoDeDatos.ipynb        # Recopilación y preprocesamiento de datos
+
 │   ├── Spotify_Visualizacion.ipynb        # Análisis exploratorio y visualización
+
 │   └── Spotify_ModelosDePrediccion.ipynb  # Entrenamiento y evaluación de modelos
 
 ## Paso 1: Recopilación de Datos
