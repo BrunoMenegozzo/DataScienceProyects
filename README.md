@@ -31,4 +31,5 @@ En esta fase, se realizó un análisis exploratorio exhaustivo de los datos reco
 
 Se entrenó un modelo de regresión logística inicialmente para clasificar entre los datos obtenidos. Además se obtuvo la correspondiente matriz de confusión, se realizó la correspondiente optimización de hiperparametros y se graficó la curva ROE que permite observar el desempeño de este modelo.
     Por último, se evaluaron otros modelos de clasificación (como random forest, máquinas vectoriales, KNN, MLP) para observar el desempeño de otros modelos y compararlos. Graficando el desempeño de cada uno en un conjunto de gráficos de dos dimensiones logrado gracias a una reducción de la dimensionalidad con PCA
-
+    
+![ModelosVariosResultados](https://github.com/BrunoMenegozzo/DataScienceProyects/assets/101132664/1c90ecdc-8a63-48f9-86f7-bde3ab7358ac)
