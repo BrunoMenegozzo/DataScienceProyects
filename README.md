@@ -25,8 +25,10 @@ Buscando crear un dataset con valores devueltos de la API de Spotify, etiquetand
 │   ├── `Spotify_Visualizacion.ipynb`
 
 En esta fase, se realizó un análisis exploratorio exhaustivo de los datos recopilados, utilizando diversas técnicas de visualización para comprender mejor las características y relaciones entre las variables. Se generó un heatmap para visualizar las correlaciones entre las diferentes features, lo que permitió identificar patrones y dependencias significativas. Se crearon histogramas para cada una de las características, proporcionando una visión clara de la distribución de los datos en cada variable. Además, se utilizaron gráficos de cajas (box plots) para detectar outliers y comprender la dispersión de los datos en cada categoría. Finalmente, se elaboró un pairplot que muestra la relación entre todas las features, ofreciendo una perspectiva global de cómo interactúan las variables entre sí y cómo se agrupan los diferentes géneros musicales en función de estas características. Estas visualizaciones fueron fundamentales para guiar las decisiones en la etapa de modelado y para obtener insights valiosos sobre las particularidades de cada género musical.
+![PairPlotSpotify](https://github.com/BrunoMenegozzo/DataScienceProyects/assets/101132664/25b86be9-56e7-4304-b1a2-bc240b3736d1)
 ## Paso 3: Entrenamiento del modelo de clasificación
 │   └── `Spotify_ModelosDePrediccion.ipynb`
 
 Se entrenó un modelo de regresión logística inicialmente para clasificar entre los datos obtenidos. Además se obtuvo la correspondiente matriz de confusión, se realizó la correspondiente optimización de hiperparametros y se graficó la curva ROE que permite observar el desempeño de este modelo.
     Por último, se evaluaron otros modelos de clasificación (como random forest, máquinas vectoriales, KNN, MLP) para observar el desempeño de otros modelos y compararlos. Graficando el desempeño de cada uno en un conjunto de gráficos de dos dimensiones logrado gracias a una reducción de la dimensionalidad con PCA
+
