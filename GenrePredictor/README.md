@@ -1,25 +1,34 @@
-# Predictor de genero musical
-Explorando la información que proporciona Spotify mediante la API me di cuenta de que no incluía el género de la canción, esto me llamó poderosamente la atención ya proporcionar otros datos tan abstractos como la “bailabilidad”. Sin embargo, es entendible que no proporcione esta información ya que es difícil de definir, hay canciones que se encuentran influenciadas por distintos géneros y eso hace complicado una determinación precisa. Además, mucha gente no distingue géneros, he estado en muchas conversaciones donde la confusión entre cumbia y cuarteto o entre trap y rap se da.
+## GENRE PREDICTOR with Spotify
+## Music Genre Predictor
+Exploring the information provided by Spotify through the API I realized that it did not include the genre of the song, this caught my attention powerfully and provide other data as abstract as the "danceability". However, it is understandable that it does not provide this information as it is difficult to define, there are songs that are influenced by different genres and that makes a precise determination complicated. In addition, many people do not distinguish genres, I have been in many conversations where confusion between cumbia and cuarteto or between trap and rap occurs.
 
-Motivado con esta idea encare este proyecto, vamos a ver si es posible distinguir entre distintos géneros utilizando la información proporcionada por la API de spotify y haciendo un poco de scraping de datos.
+Motivated by this idea I started this project, we are going to see if it is possible to distinguish between different genres using the information provided by the spotify API and doing some data scraping.
 
-El proyecto se divide en 3 fases
+The project is divided into 3 phases.
 
-├── notebooks/
-│   ├── Spotify_ManejoDeDatos.ipynb        # Recopilación y preprocesamiento de datos
-│   ├── Spotify_Visualizacion.ipynb        # Análisis exploratorio y visualización
-│   └── Spotify_ModelosDePrediccion.ipynb  # Entrenamiento y evaluación de modelos
+├── notebooks/.
 
-## Paso 1: Recopilación de Datos
-│   ├── Spotify_ManejoDeDatos.ipynb
+│ ├─── Spotify_DataManagement.ipynb # Data collection and preprocessing.
 
-    Buscando crear un dataset con valores devueltos de la API de Spotify, etiquetando por artistas conocidos y que se dedican exclusivamente a un género. Por ejemplo "La Mona Jimenez" es un referente del cuarteto y es el único género al cual se dedica. Y además, mediante web scraping se obtuvieron las letras de las canciones a las cuales se les aplicó un sentiment analysis para determinar el promedio de positividad de cada una de sus frases, para así obtener un nuevo feature.
-    Por su puesto, con toda esta información en bruto se prepararon los datos, limpiando algunos registros que habían quedado nulos, entre otras acciones, para un correcto análisis y visualización de datos.
+│ ├─── Spotify_Visualization.ipynb # Exploratory analysis and visualization.
 
-## Paso 2: Visualizacion de datos
-│   ├── Spotify_Visualizacion.ipynb
-    En esta fase, se realizó un análisis exploratorio exhaustivo de los datos recopilados, utilizando diversas técnicas de visualización para comprender mejor las características y relaciones entre las variables. Se generó un heatmap para visualizar las correlaciones entre las diferentes features, lo que permitió identificar patrones y dependencias significativas. Se crearon histogramas para cada una de las características, proporcionando una visión clara de la distribución de los datos en cada variable. Además, se utilizaron gráficos de cajas (box plots) para detectar outliers y comprender la dispersión de los datos en cada categoría. Finalmente, se elaboró un pairplot que muestra la relación entre todas las features, ofreciendo una perspectiva global de cómo interactúan las variables entre sí y cómo se agrupan los diferentes géneros musicales en función de estas características. Estas visualizaciones fueron fundamentales para guiar las decisiones en la etapa de modelado y para obtener insights valiosos sobre las particularidades de cada género musical.
-## Paso 3: Entrenamiento del modelo de clasificación
-│   └── Spotify_ModelosDePrediccion.ipynb
-    Se entrenó un modelo de regresión logística inicialmente para clasificar entre los datos obtenidos. Además se obtuvo la correspondiente matriz de confusión, se realizó la correspondiente optimización de hiperparametros y se graficó la curva ROE que permite observar el desempeño de este modelo.
-    Por último, se evaluaron otros modelos de clasificación (como random forest, máquinas vectoriales, KNN, MLP) para observar el desempeño de otros modelos y compararlos. Graficando el desempeño de cada uno en un conjunto de gráficos de dos dimensiones logrado gracias a una reducción de la dimensionalidad con PCA
+│ └─── Spotify_ModelosDePrediccion.ipynb # Model training and evaluation.
+
+Translated with DeepL.com (free version)
+
+## Step 1: Data Collection
+│ ├── Spotify_Data_Management.ipynb
+
+Looking to create a dataset with values returned from the Spotify API, tagging by known artists that are exclusively dedicated to a genre. For example "La Mona Jimenez" is a reference of the quartet and is the only genre to which it is dedicated. In addition, by means of web scraping we obtained the lyrics of the songs to which a sentiment analysis was applied to determine the average positivity of each of their phrases, in order to obtain a new feature. Of course, with all this raw information we prepared the data, cleaning some records that had been null, among other actions, for a correct analysis and data visualization.
+
+## Step 2: Data visualization
+│ ├── Spotify_Visualization.ipynb
+
+In this phase, a comprehensive exploratory analysis of the collected data was performed using various visualization techniques to better understand the characteristics and relationships between variables. A heatmap was generated to visualize the correlations between the different features, which allowed the identification of significant patterns and dependencies. Histograms were created for each of the features, providing a clear view of the distribution of the data in each variable. In addition, box plots were used to detect outliers and understand the dispersion of the data in each category. Finally, a pairplot was produced showing the relationship between all the features, providing a global perspective of how the variables interact with each other and how the different musical genres are grouped according to these characteristics. These visualizations were fundamental to guide decisions in the modeling stage and to obtain valuable insights about the particularities of each music genre. PairPlotSpotify
+
+## Step 3: Training the classification model.
+│ └── Spotify_ModelsOfPrediction.ipynb.
+
+A logistic regression model was initially trained to rank among the obtained data. In addition, the corresponding confusion matrix was obtained, the corresponding hyperparameter optimization was performed, and the ROE curve was plotted which allows us to observe the performance of this model. Finally, other classification models (such as random forest, vector machines, KNN, MLP) were evaluated to observe the performance of other models and compare them. Plotting the performance of each on a set of two-dimensional graphs achieved thanks to dimensionality reduction with PCA
+
+![ModelsVariousResults](https://github.com/user-attachments/assets/0fefe2a2-d7c2-44b3-874c-30ef72ffa596)
