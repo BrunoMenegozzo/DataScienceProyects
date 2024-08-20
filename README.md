@@ -34,7 +34,9 @@ Se entrenó un modelo de regresión logística inicialmente para clasificar entr
     
 ![ModelosVariosResultados](https://github.com/BrunoMenegozzo/DataScienceProyects/assets/101132664/1c90ecdc-8a63-48f9-86f7-bde3ab7358ac)
 
-#EVI_Lago_San_Roque
+
+# EVI_Lago_San_Roque
+
 Soy de Villa Carlos Paz, una ciudad ubicada en Córdoba, Argentina. Todos los años sufrimos un evento ambiental denominado "eutrofización", que es un crecimiento desmedido de la población de cianobacterias presentes en nuestro lago. Esto trae consigo diversos problemas, desde un impacto en la actividad turística de la ciudad hasta un problema de salud, ya que las cianobacterias son un vector de enfermedades hepáticas para humanos y animales.
 
 Lo que se realizó en este proyecto fue un modelo de regresión para predecir la proliferación de las cianobacterias en el lago de mi ciudad. Las mediciones se lograron obtener vía satélite a través de EVIs (índice de vegetación mejorado), tomando imágenes satelitales mensuales (https://dgg321982.users.earthengine.app/view/copernicus).
