@@ -1,0 +1,11 @@
+pandas                     2.2.2
+seaborn                    0.13.2
+matplotlib                 3.9.1
+matplotlib-inline          0.1.7
+scikit-learn               1.5.1
+numpy                      1.26.4
+sentiment-analysis-spanish 0.0.25
+spotipy                    2.24.0
+redis                      5.0.7
+requests                   2.32.3
+configparser               7.0.0
