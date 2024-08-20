@@ -1,4 +1,4 @@
-# Genre Predictor
+# GenrePredictor
 # Predictor de genero musical
 Explorando la información que proporciona Spotify mediante la API me di cuenta de que no incluía el género de la canción, esto me llamó poderosamente la atención ya proporcionar otros datos tan abstractos como la “bailabilidad”. Sin embargo, es entendible que no proporcione esta información ya que es difícil de definir, hay canciones que se encuentran influenciadas por distintos géneros y eso hace complicado una determinación precisa. Además, mucha gente no distingue géneros, he estado en muchas conversaciones donde la confusión entre cumbia y cuarteto o entre trap y rap se da.
 
@@ -33,3 +33,8 @@ Se entrenó un modelo de regresión logística inicialmente para clasificar entr
     Por último, se evaluaron otros modelos de clasificación (como random forest, máquinas vectoriales, KNN, MLP) para observar el desempeño de otros modelos y compararlos. Graficando el desempeño de cada uno en un conjunto de gráficos de dos dimensiones logrado gracias a una reducción de la dimensionalidad con PCA
     
 ![ModelosVariosResultados](https://github.com/BrunoMenegozzo/DataScienceProyects/assets/101132664/1c90ecdc-8a63-48f9-86f7-bde3ab7358ac)
+
+Soy de Villa Carlos Paz, una ciudad ubicada en Córdoba, Argentina. Todos los años sufrimos un evento ambiental denominado "eutrofización", que es un crecimiento desmedido de la población de cianobacterias presentes en nuestro lago. Esto trae consigo diversos problemas, desde un impacto en la actividad turística de la ciudad hasta un problema de salud, ya que las cianobacterias son un vector de enfermedades hepáticas para humanos y animales.
+
+Lo que se realizó en este proyecto fue un modelo de regresión para predecir la proliferación de las cianobacterias en el lago de mi ciudad. Las mediciones se lograron obtener vía satélite a través de EVIs (índice de vegetación mejorado), tomando imágenes satelitales mensuales (https://dgg321982.users.earthengine.app/view/copernicus).
+![Curvas por año](https://github.com/user-attachments/assets/fbacd783-0091-432e-a0dd-bd2fd21457f1)
