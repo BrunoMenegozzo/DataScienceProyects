@@ -1,4 +1,4 @@
-# EJERCICIO CON SPOTIFY
+# Genre Predictor
 # Predictor de genero musical
 Explorando la información que proporciona Spotify mediante la API me di cuenta de que no incluía el género de la canción, esto me llamó poderosamente la atención ya proporcionar otros datos tan abstractos como la “bailabilidad”. Sin embargo, es entendible que no proporcione esta información ya que es difícil de definir, hay canciones que se encuentran influenciadas por distintos géneros y eso hace complicado una determinación precisa. Además, mucha gente no distingue géneros, he estado en muchas conversaciones donde la confusión entre cumbia y cuarteto o entre trap y rap se da.
 
