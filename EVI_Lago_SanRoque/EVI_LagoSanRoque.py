@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 """
-file = 'C:\\Users\\Bruno\\Desktop\\Data Science\\EjerciciosPandas\\NVDI_Lago_SanRoque\\DataSet_EVI_LagoSanRoque.csv' 
+file = 'C:\\Users\\Bruno\\Desktop\\Data Science\\EjerciciosPandas\\EVI_Lago_SanRoque\\DataSet_EVI_LagoSanRoque.csv' 
 
 
 df = pd.read_csv(file)
@@ -24,7 +24,7 @@ ax.scatter(df['Fecha'], df['EVI'], color = 'b', alpha = 0.35, s = 100)
 plt.show()
 """
 
-file = 'C:\\Users\\Bruno\\Desktop\\Data Science\\EjerciciosPandas\\NVDI_Lago_SanRoque\\DataSet_EVI_LagoSanRoque.csv' 
+file = 'C:\\Users\\Bruno\\Desktop\\Data Science\\EjerciciosPandas\\EVI_Lago_SanRoque\\DataSet_EVI_LagoSanRoque.csv' 
 
 
 datos = pd.read_csv(file, decimal= ",")
